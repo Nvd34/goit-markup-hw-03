@@ -187,10 +187,11 @@ body {
   display: flex;
 
   gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
-.benefits-list {
+/* .benefits-list {
   width: calc((100% - 3 * 24px) / 4);
-}
+} */
 
 .section-heder {
   margin-bottom: 8px;
