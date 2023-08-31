@@ -36,8 +36,7 @@ body {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -52,15 +51,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 /* Header */
 .page-header-container {
   display: flex;
 
   justify-content: space-between;
-
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .logotype {
   margin-right: 76px;
@@ -75,16 +74,16 @@ body {
 }
 .navigation {
   display: flex;
+  align-items: center;
 
-  align-items: end;
+  justify-content: space-between;
 }
 .menu {
   display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .menu-list {
-  display: flex;
-  margin-right: 40px;
-
   color: #2e2f42;
 
   font-size: 16px;
@@ -94,8 +93,19 @@ body {
 }
 .address {
   display: flex;
+  align-items: center;
+  gap: 40px;
 }
-
+.menu-item {
+  display: block;
+  padding: 24px 0;
+}
+.address-list {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .address-class {
   font-style: normal;
 }
@@ -178,13 +188,14 @@ body {
   display: flex;
   flex-wrap: nowrap;
 
-  column-gap: 24px;
+  gap: 24px;
 }
 .benefits-list {
   width: calc((100% - 72px) / 4);
 }
 
 .section-heder {
+  margin-bottom: 8px;
   color: #2e2f42;
 
   /* Header 3 */
@@ -227,6 +238,7 @@ body {
 }
 
 .employees-foto {
+  margin-bottom: 8px;
   color: #2e2f42;
   text-align: center;
 
@@ -263,6 +275,7 @@ body {
   margin-bottom: 72px;
 }
 .portfolio-header {
+  margin-bottom: 8px;
   color: #2e2f42;
 
   /* Header 3 */
@@ -288,6 +301,10 @@ body {
 .item-our-teem-list {
   width: calc((100% - 48px) / 3);
 }
+.img-discription {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
 
 /* footer */
 .footer {
@@ -296,7 +313,6 @@ body {
   background: #2e2f42;
 }
 .footer-text {
-  margin-top: 16px;
   color: #f4f4fd;
   width: 264px;
   /* Body */
@@ -305,6 +321,21 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.logotype-footer {
+  display: inline-block;
+  margin-right: 76px;
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
 .class-span-footer {
   color: #f4f4fd;
 }
